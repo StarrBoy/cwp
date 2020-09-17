@@ -1,0 +1,793 @@
+body{
+	background-image:linear-gradient(to right ,#015249,#57bc90); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+hr{
+	width: 80%;
+	position: relative;
+	top: -25px;
+	height: 2px;
+	background-color: white; 
+}
+
+ .footer{
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	font-family: arial;
+	width: 100%;
+	color: black;
+	height: 50px;
+	float: left;
+	color: white;
+
+}
+
+/* SPLASH PAGE*/
+
+
+
+.index{
+	height:800px;
+	width: 100%;
+}
+.index img{   
+    position: relative;
+	top: 150px;
+	border-radius: 50%;
+	height: 500px;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: 0px 0px 20px black;
+	transition: 0.5s;
+		animation-name: hehe;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	border-width: 5px;
+
+}
+
+@media screen and (max-width: 700px){
+
+     .index img{
+         
+         height:400px;
+
+     }
+
+}
+
+@media screen and (max-width: 500px){
+
+     .index img{
+         
+         height:200px;
+
+     }
+
+}
+
+@keyframes hehe{
+    
+    0%{border-style: dashed;}
+    100%{border-style: dotted;}
+      
+}
+.index img:hover{
+         transform: scale(1.1);
+}
+
+/*Header section*/
+header .logo {
+	background-image: url(imgs/IMG_6204.JPG);
+	background-size: 100%;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	margin: 30px;
+	box-shadow: -5px 5px 15px black;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline-block;
+	padding: 10px;
+	top: -90px;
+	position: relative;
+	width: 200px;
+	font-size: 35px;
+	transition: 0.5s;
+	position: relative;
+	
+}
+
+
+header a{
+	text-decoration: none;
+	color: #f3f3f3;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	
+}
+nav li:hover{
+	transform: scale(0.9);
+    border-bottom-style: solid;
+    background-color: #222222;
+    border-color: white;
+    position: relative;
+    box-shadow: -5px 5px 10px black;
+    border-radius: 10%;
+    
+}
+@media screen and (max-width: 1122px){
+
+     nav li{
+         
+         width:100px;
+         font-size: 20px;
+     }
+     header .logo{
+
+     	height: 150px;
+	    width: 150px;
+     }    
+}
+@media screen and (max-width: 722px){
+
+    nav li{
+         width:80px;
+         font-size: 15px;
+     }
+      header .logo{
+        top: -20px;
+     	height: 100px;
+	    width: 100px;
+     } 
+      
+	}
+	@media screen and (max-width: 593px){
+
+    nav li{
+         width:50px;
+         font-size: 10px;
+         margin: 0;
+         top: -40px;
+     }
+      header .logo{
+        top: 10px;
+     	height: 100px;
+	    width: 100px;
+	    margin: 0;
+	    box-shadow: -4px 4px 10px black;
+     } 
+      hr{
+      	top: 20px;
+      }
+	}
+
+@media screen and (max-width: 412px){
+
+    nav li{
+         width:35px;
+         font-size: 8px;
+         margin: 0;
+         top: -15px;
+     }
+      header .logo{
+        top: 60px;
+        left: 5px;
+     	height: 80px;
+	    width: 80px;
+	    box-shadow: -1px 1px 5px black;
+     } 
+      hr{
+      	top: 50px;
+      }
+	}
+
+
+
+/*home section*/
+.haha{
+	text-align: center;
+	width: 14%;
+	top: -40px;
+    left: 10%;
+	float: left;
+	position: relative;
+	height: 700px;
+	
+
+} 
+
+.haha h1{
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    
+    0%{color: white}
+    50%{color: #373737}
+    100%{color: white}
+
+}
+
+.news{
+	box-shadow: -5px 5px 10px #000;
+	border-color: white;
+    border-style: double;
+	font-size: 18px;
+	width: 30%;
+	position: relative;
+	float: left;
+	text-align: justify;
+	height: 180px;
+	width: 200px;
+	background-size: cover;
+	transition: 0.5s;
+	margin: 12px;
+	left: -20px;
+	font-family: arial;
+	border-radius: 5%;
+	font-size: 20px;
+}
+
+
+
+.news:hover{
+
+	transform: scale(1.1);
+}
+
+.news:after{
+
+	content: attr(data-text);
+	position: absolute;
+	top:100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	word-wrap: break-word;
+	overflow: hidden;
+	color: #fff;
+	transition: 1s;
+	background-color: rgba(0,0,0,0.6);
+	white-space: pre-wrap;
+	border-radius: 5%;
+}
+
+
+
+.news:hover:after{
+	opacity: 1;
+	top: 0%;
+	filter: grayscale(50%);
+	text-align: center;
+	padding: 10px;
+}
+
+.content{
+
+	position: relative;
+	float: right;
+	width: 60%; 
+	right: 10%;
+	height: 600px;
+}
+.content h1{
+	text-align: center;
+	font-size: 80px;
+	font-family: fantasy;
+	color: #f3f3f3;
+}
+.content p{
+    top: -50px;
+    color: #f3f3f3;
+    font-family: fantasy;
+	position: relative;
+	font-size: 25px;
+	text-align: justify;
+	transition: 1s;
+}
+
+
+.content p:hover{
+     background-color: rgba(0,0,0,0.6); 
+     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1200px){
+     .news {
+     	height: 140px;
+     	width: 140px;
+     	font-size: 16px;
+     }
+     .content p{
+     	font-size: 25px;
+     }
+     
+	}
+@media screen and (max-width: 1122px){
+    
+    .content h1{
+    	font-size: 50px;
+    }
+	.content{
+        right: 5%;
+
+	}
+     
+    .content p{
+
+    	  top: 10px;
+
+	}
+}
+	@media screen and (max-width: 593px){
+    
+    .content{
+    	width: 60%;
+    	top: 50px;
+    }
+
+    .haha .news {
+    	height: 100px;
+    	width: 100px;
+    }
+
+    .haha {
+    	top: 20px;
+    }
+
+    .content h1{
+    	font-size: 30px;
+    	
+    }
+	.content p{
+         top: 10px;
+        font-size: 15px;
+        padding: 3px;
+	}
+	}
+
+/*gallery section*/
+
+.gal img:hover{
+	transform: scale(1.2);
+	filter: brightness(100%);
+	box-shadow: 0px 0px 20px white;
+}
+
+
+.gal{
+	position: relative;
+	width: 100%;
+}
+
+
+.gal img{
+	height: 400px;
+	width: 240px;
+	flex-wrap: wrap;
+	border-radius: 5%;
+	margin: 30px;
+	box-shadow: -5px 5px 10px white;
+	filter: brightness(5%);
+	transition: 1s;
+}
+
+@media screen and (max-width: 1200px){
+
+        .gal img{
+        	height: 250px;
+        	width: 200px;
+        }
+}
+@media screen and (max-width: 593px){
+
+	.gal img {
+		height: 200px;
+        	width: 150px;
+	}
+
+}
+@media screen and (max-width: 413px){
+
+	.gal{
+		top: 50px;
+	}
+	.footer{
+		top:20px;
+	}
+
+}
+
+
+/*events section*/
+.event {
+	
+	width: 15%; 
+	float: right;
+	position: relative;
+	right: 10%;
+	padding-right: 10px;
+	background-color: #dddddd;
+	box-shadow: -5px 5px 10px black;
+}
+
+.event img{
+	height: 250px;
+	width: 200px;
+	flex-wrap: wrap;
+	border-radius: 5%;
+	margin: 10px;
+	box-shadow: -5px 5px 10px black;
+	filter: brightness(20%);
+	transition: 1s;
+}
+
+
+
+.event img:hover{
+	transform: scale(1.1);
+	filter: brightness(100%);
+}
+.container{
+	width: 65%;
+	float: right;
+	position: relative;
+	right: 10%;
+	background-color: #015249;
+	border-top-right-radius: 5%;
+	box-shadow: -5px 5px 10px black;
+	border-bottom-right-radius: 5%;
+}
+.container img{
+	margin: 20px;
+	height: 280px;
+	border-radius: 10%;
+	transition: 1s;
+	width: 400px;
+	box-shadow: -10px 10px 10px black;
+}
+.container img:hover{
+	transform: scale(1.1);
+}
+.container h1{
+	text-shadow: -10px 10px 10px black;
+	font-family: fantasy;
+	font-size: 50px;
+	color: #f3f3f3;
+}
+
+@media screen and (max-width: 1200px){
+
+        .event img{
+        	height: 200px;
+        	width: 150px;
+        }
+        .container img{
+        	height: 210px;
+        	width: 300px;
+        }
+    
+
+}
+@media screen and (max-width: 1068px){
+
+        .event img{
+        	height: 161px;
+        	width: 120px;
+        }
+           .container img{
+        	height: 160px;
+        	width: 250px;
+        }
+
+}
+@media screen and (max-width: 915px){
+
+           .container img{
+        	height: 130px;
+        	width: 210px;
+        }
+            .container h1{
+        	font-size: 30px;
+        }
+
+            .event img{
+            	height: 125px;
+            	width: 100px;
+
+            }
+
+}
+@media screen and (max-width: 793px){
+
+           .container img{
+        	height: 200px;
+        	width: 250px;
+        }
+        .container {
+        	padding: 0;
+        }
+            .container h1{
+        	font-size: 30px;
+        }
+
+            .event img{
+            	height: 100px;
+            	width: 75px;
+
+            }
+
+}
+@media screen and (max-width: 593px){
+
+           .container img{
+        	height: 150px;
+        	width: 200px;
+        }
+        .container {
+        	top: 50px;
+        }
+            .container h1{
+        	font-size: 30px;
+        }
+        .event {
+            	top: 50px;
+}
+
+
+            .event img{
+            	height: 80px;
+            	width: 55px;
+
+            }
+
+}
+
+/*about section*/
+
+.about{
+	width: 80%;
+    position: relative; 
+    float: right;
+    right: 10%;
+    color: #f3f3f3;
+    margin-top: 50px;
+    
+}
+
+.about h1{
+	font-size: 70px;
+	font-family: fantasy;
+	text-align: center;
+}
+.about p{
+	font-size: 23px;
+	font-family: fantasy;
+	padding-left: 15%;
+	padding-right: 15%;
+	transition: 1s;
+	padding: 50px;
+
+}
+
+.about p:hover{
+	transform: scale(1.1);
+	background-color: rgba(0,0,0,0.6);
+}
+@media screen and (max-width: 595px){
+
+	.about h1{
+         font-size: 50px;
+
+	}
+	.about p{
+		font-size: 20px;
+		padding: 10px;
+	}
+}
+/*CONTACTS SECTION*/
+
+.contacts{
+	position: relative;
+	right: 18%;
+	float: right;
+	width: 80%;
+	height: 600px;
+	top: 0px;
+}
+
+.contacts ul{
+	list-style-type: none;
+}
+
+.contacts img{
+	height: 50px;
+	width: 50px;
+	filter: brightness(0%);
+	margin-top: 5%;
+	margin-left: 10%;
+
+}
+
+.contacts a{
+	text-decoration: none;
+	color: #f3f3f3;
+	font-size: 25px;
+	position: relative;
+	top: -20px;
+	margin-left: 20px;
+	font-weight: bold;
+	font-family: fantasy;
+	transition: 1s;
+}
+
+.ue{
+    
+    right: -50px;
+	position: relative;
+	float: right;
+	width: 400px;
+	height: 400px;
+	border-style: solid;
+	top: -150px;
+}
+
+.social{
+	width: 400px;
+	height: 200px;
+	position: relative;
+	float: left;
+	left: 70px;
+	top: 50px;
+	border-color: white;
+	border-top-style: solid;
+	display: inline-block;
+}
+
+.social img{
+	height: 70px;
+	width: 70px;
+	display: flex;
+	position: relative;
+	float: right;
+	right: 10%;
+	top: 40%;
+	margin: 20px;
+	transition: 1s;
+}
+
+.social img:hover{
+	transform: scale(1.3);
+}
+
+@media screen and (max-width: 1120px){
+
+           .ue {
+        	height: 350px;
+        	width: 350px;
+        	}
+
+           .social img{
+           	height: 50px;
+           	width: 50px;
+           	float: left;
+           	left: 50px;
+           	display: flex;
+           }
+           .social{
+            width: 50%;
+            position: relative;
+            float: left;
+            left: 40px;
+           }
+           .contacts a{
+           	font-size: 20px;
+           }
+        }
+        @media screen and (max-width: 958px){
+
+        	.social{
+            width: 45%;
+            position: relative;
+            float: left;
+            left: 40px;
+           }
+           .social img{
+           
+           	float: left;
+           	left: 20px;
+
+           }
+           .contacts img{
+           	width: 50px;
+           	height: 50px;
+           }
+ }
+
+   @media screen and (max-width: 890px){
+
+              .ue {
+        	height: 300px;
+        	width: 300px;
+        	}
+            
+           .contacts a{
+           	font-size: 15px;
+           }
+ }
+  @media screen and (max-width: 765px){
+
+              .ue {
+        	height: 250px;
+        	width: 250px;
+        	}
+            
+           .contacts a{
+           	font-size: 15px;
+           }
+ }
+  @media screen and (max-width: 700px){
+
+              .ue {
+        	height: 250px;
+        	width: 250px;
+        	position: relative;
+        	float: left;
+        	top: -370px;
+        	left: 50px;
+        	}
+            
+           
+
+           .contacts a{
+           	font-size: 15px;
+           }
+           .contacts li{
+           	position: relative;
+           	top: 250px;
+           }
+
+           .social{
+           	left: 0;
+           	width: 100%;
+           	top:  250px;
+           }
+           .social img{
+           	top: 0px;
+           }
+ }
+  @media screen and (max-width: 595px){
+ .ue {
+        	height: 200px;
+        	width: 200px;
+        	position: relative;
+        	float: left;
+        	top: -320px;
+        	left: 50px;
+        	}
+        	.social img{
+            left: 50px;
+           	height:  37px;
+           	width:  37px;
+           }
+  }
